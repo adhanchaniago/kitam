@@ -1,2 +1,1 @@
-# kitam
 KITAM
