@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2017 at 04:17 PM
+-- Generation Time: Oct 22, 2017 at 08:49 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -89,13 +89,10 @@ CREATE TABLE `hardware` (
 --
 
 INSERT INTO `hardware` (`id_hardware`, `id_supplier`, `id_staff`, `category`, `name`, `label`, `manufacturer`, `series`, `price`, `purchase_date`, `warranty`, `image`, `condition`, `location`, `description`, `timestamp`, `cpu`, `memory`, `vga`, `storage`, `lan_port`, `wireless_adapter`) VALUES
-(38, 4, 0, 'server', 'Blade Server', 'DELLET', 'Dell', 'Dellet aja', 520000, '2017-09-14', '9', NULL, 'In Service', 'Bandung Office', 'asdfas dfdf', '2017-09-21 09:17:43', '7', '7', '7', '7', '7', 'No'),
-(40, 4, 4, 'monitor', 'LCD Monitor', 'Acerrr10', 'Acer', 'Cerrrrr', 150000, '2017-09-28', '36', NULL, 'Bad', 'Jakarta Office', 'sdafasdf        ', '2017-09-21 09:58:33', NULL, NULL, NULL, NULL, NULL, NULL),
-(41, 2, 1, 'dummy', ' Dummy 3', 'test img2', 'Test', '234', 156000, '2017-09-14', '12', NULL, 'Good', 'Jakarta Office', 'asdfas', '2017-09-23 04:19:23', NULL, NULL, NULL, NULL, NULL, NULL),
 (43, 0, 54, 'pc', 'Laptop', 'KSL-001', 'Mac', 'Macbook Pro', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 15:59:08', '', '', '', '', '', 'Yes'),
-(44, NULL, NULL, 'pc', 'Laptop', 'KSL-002', 'Dell', 'Inspiron 14 3000 Series', NULL, NULL, NULL, NULL, '', '', NULL, '2017-10-10 15:44:31', NULL, NULL, NULL, NULL, NULL, NULL),
-(45, NULL, NULL, 'pc', 'Laptop', 'KSL-002a', 'Toshiba', 'Satellite C800-1024', NULL, NULL, NULL, NULL, '', '', NULL, '2017-10-10 15:44:31', NULL, NULL, NULL, NULL, NULL, NULL),
-(46, NULL, NULL, 'pc', 'Laptop', 'KSL-003', 'ASUS', 'A450CA-WX104D', NULL, NULL, NULL, NULL, '', '', NULL, '2017-10-10 15:44:31', NULL, NULL, NULL, NULL, NULL, NULL),
+(44, 0, 0, 'pc', 'Laptop', 'KSL-002', 'Dell', 'Inspiron 14 3000 Series', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-13 23:43:03', '', '', '', '', '', 'Yes'),
+(45, 0, 0, 'pc', 'Laptop', 'KSL-002a', 'Toshiba', 'Satellite C800-1024', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-13 23:43:14', '', '', '', '', '', 'Yes'),
+(46, 0, 0, 'pc', 'Laptop', 'KSL-003', 'ASUS', 'A450CA-WX104D', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-13 23:43:23', '', '', '', '', '', 'Yes'),
 (47, 0, 30, 'pc', 'Laptop', 'KSL-004', 'ASUS', 'A46CB-WX025D', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 15:59:11', '', '', '', '', '', 'Yes'),
 (48, 0, 16, 'pc', 'Laptop', 'KSL-004a', 'ASUS', ' X455LA-WX081D', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 15:59:14', '', '', '', '', '', 'Yes'),
 (49, 0, 0, 'pc', 'Laptop', 'KSL-005', 'Lenovo', 'G450', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 16:03:28', '', '', '', '', '', 'Yes'),
@@ -141,7 +138,129 @@ INSERT INTO `hardware` (`id_hardware`, `id_supplier`, `id_staff`, `category`, `n
 (89, 0, 48, 'pc', 'Laptop', 'KSL-052', 'ASUS', 'A456U', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 16:06:52', '', '', '', '', '', 'Yes'),
 (90, 0, 19, 'pc', 'Laptop', 'KSL-053', 'ASUS', 'A456U', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 16:07:00', '', '', '', '', '', 'Yes'),
 (91, 0, 28, 'pc', 'Laptop', 'KSL-054', 'ASUS', 'A456U', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 16:07:12', '', '', '', '', '', 'Yes'),
-(92, 0, 51, 'pc', 'Laptop', 'KSL-055', 'ASUS', 'A456U', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 16:07:20', '', '', '', '', '', 'Yes');
+(92, 0, 51, 'pc', 'Laptop', 'KSL-055', 'ASUS', 'A456U', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-10 16:07:20', '', '', '', '', '', 'Yes'),
+(93, 0, 11, 'monitor', 'LCD Monitor', 'KSM-001', 'HP', 'LCD Monitor 19.5 Inch [W1907]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:46:45', NULL, NULL, NULL, NULL, NULL, NULL),
+(94, 0, 20, 'monitor', 'LED Monitor', 'KSM-002', 'DELL', 'LED Ultra-Slim Monitor 23 Inch [S2330MX]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:46:59', NULL, NULL, NULL, NULL, NULL, NULL),
+(95, 0, 41, 'monitor', 'LED Monitor', 'KSM-003', 'DELL', 'LED Ultra-Slim Monitor 23 Inch [S2330MX]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:47:15', NULL, NULL, NULL, NULL, NULL, NULL),
+(96, 0, 19, 'monitor', 'LED Monitor', 'KSM-004', 'DELL', 'LED Ultra-Slim Monitor 23 Inch [S2330MX]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:47:34', NULL, NULL, NULL, NULL, NULL, NULL),
+(97, 0, 32, 'monitor', 'LCD Monitor', 'KSM-005', 'HP', 'LCD Monitor 19.5 Inch [W1907]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:48:05', NULL, NULL, NULL, NULL, NULL, NULL),
+(98, 0, 16, 'monitor', 'LCD Monitor', 'KSM-006', 'HP', 'LCD Monitor 19.5 Inch [W1907]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:48:21', NULL, NULL, NULL, NULL, NULL, NULL),
+(99, 0, 47, 'monitor', 'LED Monitor', 'KSM-007', 'DELL', 'LED Ultra-Slim Monitor 23 Inch [S2330MX]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:49:04', NULL, NULL, NULL, NULL, NULL, NULL),
+(100, NULL, NULL, 'monitor', 'LED Monitor', 'KSM-009', 'DELL', 'Monitor LED 21.5 Inch [E2215HV]', NULL, NULL, NULL, NULL, 'Good', '', NULL, '2017-10-21 14:45:06', NULL, NULL, NULL, NULL, NULL, NULL),
+(101, 0, 48, 'monitor', 'LED Monitor', 'KSM-010', 'LG', 'LED Monitor 19.5 Inch [20M38A]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:49:15', NULL, NULL, NULL, NULL, NULL, NULL),
+(102, NULL, NULL, 'monitor', 'LED Monitor', 'KSM-011', 'DELL', 'Monitor LED 21.5 Inch [E2215HV]', NULL, NULL, NULL, NULL, 'Good', '', NULL, '2017-10-21 14:45:06', NULL, NULL, NULL, NULL, NULL, NULL),
+(103, 0, 36, 'monitor', 'LED Monitor', 'KSM-012', 'DELL', 'LED Monitor 19.5 Inch [E2016HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:49:49', NULL, NULL, NULL, NULL, NULL, NULL),
+(104, 0, 35, 'monitor', 'LED Monitor', 'KSM-013', 'DELL', 'LED Monitor 19.5 Inch [E2016HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:50:00', NULL, NULL, NULL, NULL, NULL, NULL),
+(105, 0, 14, 'monitor', 'LED Monitor', 'KSM-014', 'DELL', 'LED Monitor 19.5 Inch [E2016HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:50:10', NULL, NULL, NULL, NULL, NULL, NULL),
+(106, 0, 28, 'monitor', 'LED Monitor', 'KSM-015', 'DELL', 'LED Monitor 19.5 Inch [E2016HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:50:28', NULL, NULL, NULL, NULL, NULL, NULL),
+(107, 0, 31, 'monitor', 'LED Monitor', 'KSM-016', 'DELL', 'LED Monitor 19.5 Inch [E2016HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:50:53', NULL, NULL, NULL, NULL, NULL, NULL),
+(108, 0, 29, 'monitor', 'LED Monitor', 'KSM-017', 'DELL', 'LED Monitor 19.5 Inch [E2016HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:51:02', NULL, NULL, NULL, NULL, NULL, NULL),
+(109, 0, 37, 'monitor', 'LED Monitor', 'KSM-018', 'DELL', 'IPS LED Monitor 23 Inch [P2317H]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:51:30', NULL, NULL, NULL, NULL, NULL, NULL),
+(110, NULL, NULL, 'monitor', 'LED Monitor', 'KSM-019', 'DELL', 'IPS LED Monitor 23 Inch [P2317H]', NULL, NULL, NULL, NULL, 'Good', '', NULL, '2017-10-21 14:45:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(111, 0, 49, 'monitor', 'LED Monitor', 'KSM-020', 'DELL', 'IPS LED Monitor 23 Inch [P2317H]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:52:01', NULL, NULL, NULL, NULL, NULL, NULL),
+(112, 0, 46, 'monitor', 'LED Monitor', 'KSM-021', 'DELL', 'LED Monitor 22 Inch [E2216HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:52:09', NULL, NULL, NULL, NULL, NULL, NULL),
+(113, 0, 22, 'monitor', 'LED Monitor', 'KSM-022', 'DELL', 'LED Monitor 22 Inch [E2216HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:52:37', NULL, NULL, NULL, NULL, NULL, NULL),
+(114, 0, 39, 'monitor', 'LED Monitor', 'KSM-023', 'DELL', 'LED Monitor 22 Inch [E2216HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:52:47', NULL, NULL, NULL, NULL, NULL, NULL),
+(115, 0, 30, 'monitor', 'LED Monitor', 'KSM-024', 'DELL', 'LED Monitor 22 Inch [E2216HV]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:52:57', NULL, NULL, NULL, NULL, NULL, NULL),
+(116, 0, 51, 'monitor', 'LED Monitor', 'KSM-025', 'DELL', 'Monitor Gaming 23.6 inch [SE2417HG]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:53:37', NULL, NULL, NULL, NULL, NULL, NULL),
+(117, 0, 12, 'monitor', 'LED Monitor', 'KSM-026', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Bandung', '', '2017-10-21 14:54:21', NULL, NULL, NULL, NULL, NULL, NULL),
+(118, 0, 15, 'monitor', 'LED Monitor', 'KSM-027', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Bandung', '', '2017-10-21 14:54:31', NULL, NULL, NULL, NULL, NULL, NULL),
+(119, 0, 50, 'monitor', 'LED Monitor', 'KSM-028', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Bandung', '', '2017-10-21 14:56:27', NULL, NULL, NULL, NULL, NULL, NULL),
+(120, 0, 56, 'monitor', 'LED Monitor', 'KSM-029', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Bandung', '', '2017-10-21 14:56:34', NULL, NULL, NULL, NULL, NULL, NULL),
+(121, NULL, NULL, 'monitor', 'LED Monitor', 'KSM-030', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', NULL, NULL, NULL, NULL, 'Good', '', NULL, '2017-10-21 14:45:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(122, 0, 27, 'monitor', 'LED Monitor', 'KSM-031', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Bandung', '', '2017-10-21 14:56:44', NULL, NULL, NULL, NULL, NULL, NULL),
+(123, 0, 55, 'monitor', 'LED Monitor', 'KSM-032', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Bandung', '', '2017-10-21 14:56:18', NULL, NULL, NULL, NULL, NULL, NULL),
+(124, NULL, NULL, 'monitor', 'LED Monitor', 'KSM-033', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 14:45:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(125, 0, 42, 'monitor', 'LED Monitor', 'KSM-034', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Bandung', '', '2017-10-21 14:57:15', NULL, NULL, NULL, NULL, NULL, NULL),
+(126, 0, 44, 'monitor', 'LED Monitor', 'KSM-035', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:57:26', NULL, NULL, NULL, NULL, NULL, NULL),
+(127, NULL, NULL, 'monitor', 'LED Monitor', 'KSM-036', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', NULL, NULL, NULL, NULL, 'Good', '', NULL, '2017-10-21 14:45:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(128, NULL, NULL, 'monitor', 'LED Monitor', 'KSM-037', 'Acer', 'LED Monitor 19.5 Inch [K202HQL]', NULL, NULL, NULL, NULL, 'Good', '', NULL, '2017-10-21 14:45:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(129, 0, 17, 'monitor', 'LED Monitor', 'KSM-038', 'Apple', 'iMac 23 Inch', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 14:57:43', NULL, NULL, NULL, NULL, NULL, NULL),
+(130, 0, 23, 'accessories', 'Mouse', 'KSP-025', 'Logitech', 'Wired Optical Mouse M90', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:05:20', NULL, NULL, NULL, NULL, NULL, NULL),
+(131, 0, 43, 'accessories', 'Mouse', 'KSP-026', 'Logitech', 'Wired Optical Mouse M90', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:05:28', NULL, NULL, NULL, NULL, NULL, NULL),
+(132, 0, 16, 'accessories', 'Mouse', 'KSP-027', 'Logitech', 'Wired Optical Mouse M90', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:05:46', NULL, NULL, NULL, NULL, NULL, NULL),
+(133, 0, 21, 'accessories', 'Mouse', 'KSP-036', 'Logitech', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:06:00', NULL, NULL, NULL, NULL, NULL, NULL),
+(134, 0, 37, 'accessories', 'Mouse', 'KSP-037', 'Logitech', 'Wired Optical Mouse M90', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:06:09', NULL, NULL, NULL, NULL, NULL, NULL),
+(135, 0, 49, 'accessories', 'Mouse', 'KSP-038', 'Logitech', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:18:05', NULL, NULL, NULL, NULL, NULL, NULL),
+(136, 0, 52, 'accessories', 'Mouse', 'KSP-039', 'Genius', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:06:32', NULL, NULL, NULL, NULL, NULL, NULL),
+(137, 0, 32, 'accessories', 'Mouse', 'KSP-040', 'Genius', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:06:42', NULL, NULL, NULL, NULL, NULL, NULL),
+(138, 0, 36, 'accessories', 'Mouse', 'KSP-041', 'Logitech', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:06:57', NULL, NULL, NULL, NULL, NULL, NULL),
+(139, 0, 31, 'accessories', 'Mouse', 'KSP-042', 'Logitech', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:07:09', NULL, NULL, NULL, NULL, NULL, NULL),
+(140, 0, 46, 'accessories', 'Mouse', 'KSP-043', 'Genius', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:07:34', NULL, NULL, NULL, NULL, NULL, NULL),
+(141, 0, 35, 'accessories', 'Mouse', 'KSP-044', 'Logitech', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:07:42', NULL, NULL, NULL, NULL, NULL, NULL),
+(142, 0, 40, 'accessories', 'Mouse', 'KSP-045', 'Logitech', 'Wired Optical Mouse', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:07:57', NULL, NULL, NULL, NULL, NULL, NULL),
+(143, 0, 19, 'accessories', 'Mouse', 'KSP-028', 'HAVIT', 'Mousepad Gaming [HV-MP825]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:12:10', NULL, NULL, NULL, NULL, NULL, NULL),
+(144, 0, 31, 'accessories', 'Mouse', 'KSP-029', 'HAVIT', 'Mousepad Gaming [HV-MP825]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:12:18', NULL, NULL, NULL, NULL, NULL, NULL),
+(145, 0, 18, 'accessories', 'Mouse', 'KSP-030', 'HAVIT', 'Mousepad Gaming [HV-MP825]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:12:24', NULL, NULL, NULL, NULL, NULL, NULL),
+(146, 0, 43, 'accessories', 'Mouse', 'KSP-031', 'HAVIT', 'Mousepad Gaming [HV-MP825]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:12:51', NULL, NULL, NULL, NULL, NULL, NULL),
+(147, 0, 23, 'accessories', 'Mouse', 'KSP-032', 'HAVIT', 'Mousepad Gaming [HV-MP825]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:12:57', NULL, NULL, NULL, NULL, NULL, NULL),
+(148, 0, 37, 'accessories', 'Mouse', 'KSP-033', 'HAVIT', 'Mousepad Gaming [HV-MP825]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:13:06', NULL, NULL, NULL, NULL, NULL, NULL),
+(149, 0, 28, 'accessories', 'Mouse', 'KSP-034', 'HAVIT', 'Mousepad Gaming [HV-MP825]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:13:46', NULL, NULL, NULL, NULL, NULL, NULL),
+(150, 0, 35, 'accessories', 'Mouse', 'KSP-035', 'HAVIT', 'Mousepad Gaming [HV-MP825]', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:13:59', NULL, NULL, NULL, NULL, NULL, NULL),
+(151, NULL, NULL, 'accessories', 'Mouse', 'KSP-002', 'Logitech', 'K120', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:15:49', NULL, NULL, NULL, NULL, NULL, NULL),
+(152, 0, 0, 'accessories', 'Converter', 'KSX-XXX', '', 'Mac Converter display port to HDMI', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '        ', '2017-10-21 15:17:29', NULL, NULL, NULL, NULL, NULL, NULL),
+(153, NULL, NULL, 'cctv', 'CCTV Station', 'KSC-001', 'Blink', 'Sync Module BSM0100U', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:23:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(154, NULL, NULL, 'cctv', 'CCTV Camera', 'KSC-002', 'Blink', 'Blink CCTV Jakarta A', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:23:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(155, NULL, NULL, 'cctv', 'CCTV Camera', 'KSC-003', 'Blink', 'Blink CCTV Jakarta B', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:23:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(156, NULL, NULL, 'cctv', 'CCTV Camera', 'KSC-004', 'Blink', 'Blink CCTV Jakarta C', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:23:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(157, NULL, NULL, 'cctv', 'CCTV Camera', 'KSC-005', 'Netgear', 'Arlo CCTV', NULL, NULL, NULL, NULL, 'Good', 'Kemana Bandung', NULL, '2017-10-21 15:23:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(158, NULL, NULL, 'cctv', 'CCTV Camera', 'KSC-006', 'Netgear', 'Arlo CCTV', NULL, NULL, NULL, NULL, 'Good', 'Kemana Bandung', NULL, '2017-10-21 15:23:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(159, NULL, NULL, 'cctv', 'CCTV Station', 'KSC-007', 'Netgear', 'Base Station CCTV', NULL, NULL, NULL, NULL, 'Good', 'Kemana Bandung', NULL, '2017-10-21 15:23:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(160, 0, 0, 'communication', 'Conference Call', 'KSP-046', 'Panasonic', 'PABX 3 lines (CO) 8 Extension PBX Unit KX-TES824', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:37:03', NULL, NULL, NULL, NULL, NULL, NULL),
+(161, NULL, NULL, 'communication', 'Phone', 'KST-100', 'Panasonic', 'KX-T7730', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:51', NULL, NULL, NULL, NULL, NULL, NULL),
+(162, NULL, NULL, 'communication', 'Phone', 'KST-101', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:51', NULL, NULL, NULL, NULL, NULL, NULL),
+(163, NULL, NULL, 'communication', 'Phone', 'KST-102', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(164, NULL, NULL, 'communication', 'Phone', 'KST-103', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(165, NULL, NULL, 'communication', 'Phone', 'KST-104', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(166, NULL, NULL, 'communication', 'Phone', 'KST-105', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(167, NULL, NULL, 'communication', 'Phone', 'KST-200', 'Panasonic', 'KX-T2373MXW', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(168, NULL, NULL, 'communication', 'Phone', 'KST-201', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(169, NULL, NULL, 'communication', 'Phone', 'KST-202', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(170, NULL, NULL, 'communication', 'Phone', 'KST-203', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(171, NULL, NULL, 'communication', 'Phone', 'KST-204', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(172, NULL, NULL, 'communication', 'Phone', 'KST-205', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(173, NULL, NULL, 'communication', 'Phone', 'KST-206', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(174, NULL, NULL, 'communication', 'Phone', 'KST-207', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(175, NULL, NULL, 'communication', 'Phone', 'KST-208', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(176, NULL, NULL, 'communication', 'Phone', 'KST-210', 'Panasonic', 'KX-TS505MX', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:30:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(177, 0, 0, 'communication', 'Conference Call', 'KSP-021', 'Logitech', 'e3000 skype conference call device Hub', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:37:09', NULL, NULL, NULL, NULL, NULL, NULL),
+(178, 0, 0, 'communication', 'Conference Call', 'KSP-022', 'Logitech', 'e3000 skype conference call device remote', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:37:13', NULL, NULL, NULL, NULL, NULL, NULL),
+(179, NULL, NULL, 'communication', 'PABX', 'KSP-023', 'Logitech', 'e3000 skype conference call device Camera', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:33:03', NULL, NULL, NULL, NULL, NULL, NULL),
+(180, NULL, NULL, 'electricity', 'UPS', 'KSP-016', 'UPS', 'General Electric VCL 1500VA', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:38:57', NULL, NULL, NULL, NULL, NULL, NULL),
+(181, NULL, NULL, 'multimedia', 'TV', 'KSP-012', 'LG', '47LV3730', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:42:26', NULL, NULL, NULL, NULL, NULL, NULL),
+(182, NULL, NULL, 'multimedia', 'TV', 'KSP-013', 'SHARP', 'AQUOS', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:42:26', NULL, NULL, NULL, NULL, NULL, NULL),
+(183, NULL, NULL, 'multimedia', 'Speaker', 'KSP-011', 'Polycom', 'Polycom Sound Station', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:44:14', NULL, NULL, NULL, NULL, NULL, NULL),
+(184, 0, 0, 'multimedia', 'Headset', 'KSX-XXX', 'SKYPAL', 'Stereo PC HEADSET', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:46:07', NULL, NULL, NULL, NULL, NULL, NULL),
+(185, NULL, NULL, 'multimedia', 'Camera', 'KSP-015', 'Panasonic', 'DV Network Station Panasonic NV-DV 200', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:47:27', NULL, NULL, NULL, NULL, NULL, NULL),
+(186, 0, 0, 'multimedia', 'Projector', 'KSP-047', 'Optoma', 'Optoma PK301 Pico Pocket Projector', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-21 15:48:50', NULL, NULL, NULL, NULL, NULL, NULL),
+(187, 0, 18, 'printer', 'Printer', 'KSP-014', 'HP', 'HP DeskJet 2132', 2000000, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-22 08:10:12', NULL, NULL, NULL, NULL, NULL, NULL),
+(188, 0, 0, 'printer', 'Printer', 'KSP-017', 'Fuji Xerox', 'Fuji Xerox Docuprint CM215b', 1500000, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-22 08:10:21', NULL, NULL, NULL, NULL, NULL, NULL),
+(189, NULL, NULL, 'printer', 'Printer', 'KSP-018', 'Panasonic', 'Panasonic KX-MB 772', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:52:31', NULL, NULL, NULL, NULL, NULL, NULL),
+(190, NULL, NULL, 'printer', 'Printer', 'KSP-020', 'Epson', 'Epson L200', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-21 15:52:31', NULL, NULL, NULL, NULL, NULL, NULL),
+(191, 0, 0, 'tools', ' Paper Shredder', 'KSX-XXX', 'Krisbow', 'Paper Shredder', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '', '2017-10-22 04:43:30', NULL, NULL, NULL, NULL, NULL, NULL),
+(192, NULL, NULL, 'server', 'Server', 'KSS-001', 'DELL', 'Power Edge R710', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 02:58:20', NULL, NULL, NULL, NULL, NULL, NULL),
+(193, NULL, NULL, 'server', 'Server', 'KSS-003', 'DELL', 'Power Edge T20', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 02:58:20', NULL, NULL, NULL, NULL, NULL, NULL),
+(194, NULL, NULL, 'server', 'Server', 'KSS-002', 'Intel', 'Tower PC - Intel', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 02:58:20', NULL, NULL, NULL, NULL, NULL, NULL),
+(195, NULL, NULL, 'server', 'Server', 'KSS-004', 'QNAP', 'TS-228 Turbo NAS', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 02:58:20', NULL, NULL, NULL, NULL, NULL, NULL),
+(196, NULL, NULL, 'network', 'Firewall', 'KSN-010', 'Mikrotik', 'Router Board Mikrotic 450 G', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 03:05:22', NULL, NULL, NULL, NULL, NULL, NULL),
+(197, NULL, NULL, 'network', 'Firewall', 'KSN-018', 'Mikrotik', 'Mikrotik Cloud Core Router CCR1016-12G', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 03:05:22', NULL, NULL, NULL, NULL, NULL, NULL),
+(198, NULL, NULL, 'network', 'Firewall', 'KSN-017', 'Mikrotik', 'Mikrotik Router Wireless RB962UiGS-5HacT2HnT (hAP-AC)', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 03:05:22', NULL, NULL, NULL, NULL, NULL, NULL),
+(199, NULL, NULL, 'network', 'Firewall', 'KSN-019', 'Mikrotik', 'Router Board Mikrotik RB750r2', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 03:05:22', NULL, NULL, NULL, NULL, NULL, NULL),
+(200, NULL, NULL, 'network', 'Router', 'KSN-012', 'Peplink', 'Peplink Balance 20', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:20:11', NULL, NULL, NULL, NULL, NULL, NULL),
+(201, NULL, NULL, 'network', 'Switch', 'KSN-011', 'LinkSys', 'LinkSys 48Port', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:24:54', NULL, NULL, NULL, NULL, NULL, NULL),
+(202, NULL, NULL, 'network', 'Switch', 'KSN-014', 'D-Link', 'D-Link Gigabit Switch 8 Port', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:24:54', NULL, NULL, NULL, NULL, NULL, NULL),
+(203, NULL, NULL, 'network', 'Switch', 'KSN-021', 'TP-Link', 'TP-Link TL-SG1016', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:24:54', NULL, NULL, NULL, NULL, NULL, NULL),
+(204, NULL, NULL, 'network', 'Switch', 'KSN-022', 'TP-Link', 'TP-Link TL-SG1016', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:24:54', NULL, NULL, NULL, NULL, NULL, NULL),
+(205, NULL, NULL, 'network', 'Access Point', 'KSN-001', 'ASUS', 'ASUS RT-N14UHP', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:34:51', NULL, NULL, NULL, NULL, NULL, NULL),
+(206, NULL, NULL, 'network', 'Access Point', 'KSN-002', 'TP-Link', 'TPLink TL-WA730RE', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:34:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(207, NULL, NULL, 'network', 'Access Point', 'KSN-008', 'TP-Link', 'TP-Link TD-W8951ND', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:34:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(208, NULL, NULL, 'network', 'Access Point', 'KSN-009', 'TP-Link', 'TP-Link N Router WR841HP', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:34:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(209, NULL, NULL, 'network', 'Access Point', 'KSN-013', 'D-Link', 'D-Link Dir-615', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:34:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(210, NULL, NULL, 'network', 'Access Point', 'KSN-015', 'TP-Link', 'TP-Link TL-WL841HP', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:34:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(211, NULL, NULL, 'network', 'Access Point', 'KSN-016', 'TP-Link', 'TP-Link TL-SG1008D', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:34:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(212, NULL, NULL, 'network', 'Access Point', 'KSN-020', 'ASUS', 'ASUS RT-N18U', NULL, NULL, NULL, NULL, 'Good', 'Kemana Jakarta', NULL, '2017-10-22 04:34:52', NULL, NULL, NULL, NULL, NULL, NULL),
+(213, 0, 0, 'network', 'Access Point', 'KSX-XXX', 'TP-Link', 'TP-Link Powerline adapter', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '        ', '2017-10-22 04:38:33', NULL, NULL, NULL, NULL, NULL, NULL),
+(214, 0, 0, 'network', 'Access Point', 'KSX-XXX', 'TP-Link', 'TP-Link Wifi Repeater', 0, '0000-00-00', '', NULL, 'Good', 'Kemana Jakarta', '        ', '2017-10-22 04:39:56', NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -172,8 +291,10 @@ CREATE TABLE `software` (
 --
 
 INSERT INTO `software` (`id_software`, `id_supplier`, `category`, `name`, `manufacturer`, `version`, `price`, `purchase_date`, `license`, `license_qty`, `license_start_date`, `license_end_date`, `condition`, `description`, `timestamp`) VALUES
-(1, 1, 'Licensed', 'OS Windows 10', 'Microsoft', 'Professional', 1500000, '2017-09-02', 'License', '5', '2017-09-01', '2018-09-01', 'Good', 'Nothing', NULL),
-(3, 2, NULL, 'Antivirus', 'Avast Inc', '1.0.1', 520000, '2017-10-05', NULL, '8', '2017-09-28', '2017-09-30', NULL, 'test', '2017-10-01 12:50:40');
+(4, 0, NULL, 'Norton Security with Backup', 'Norton', '', 780000, '2017-09-13', NULL, '10', '0000-00-00', '0000-00-00', NULL, 'JW29XYDWKVPKJFQFCQX4TVWP3\r\n', '2017-10-22 04:46:07'),
+(5, 0, NULL, 'Norton Security with Backup', 'Norton', '', 780000, '2017-09-13', NULL, '10', '0000-00-00', '0000-00-00', NULL, 'J4FQ3WHWJB6QTFF2V3GJF7Y66\r\n', '2017-10-22 04:47:14'),
+(6, 0, NULL, 'Norton Security with Backup', 'Norton', '', 780000, '2017-09-13', NULL, '10', '0000-00-00', '0000-00-00', NULL, 'JYD2JQRY9FF4T2MW6TQGJRWTR\r\n', '2017-10-22 04:47:46'),
+(7, 0, NULL, 'Axure RP Team', 'Axure', '', 637000, '2017-08-20', NULL, '2', '0000-00-00', '0000-00-00', NULL, '        ', '2017-10-22 04:48:33');
 
 -- --------------------------------------------------------
 
@@ -349,12 +470,12 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `hardware`
 --
 ALTER TABLE `hardware`
-  MODIFY `id_hardware` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+  MODIFY `id_hardware` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=215;
 --
 -- AUTO_INCREMENT for table `software`
 --
 ALTER TABLE `software`
-  MODIFY `id_software` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_software` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `staff`
 --
@@ -364,7 +485,7 @@ ALTER TABLE `staff`
 -- AUTO_INCREMENT for table `supplier`
 --
 ALTER TABLE `supplier`
-  MODIFY `id_supplier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_supplier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user`
 --

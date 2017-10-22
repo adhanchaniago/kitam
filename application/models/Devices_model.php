@@ -114,4 +114,12 @@ class devices_model extends CI_Model {
 
 		return $data->row();
 	}
+
+	public function total_price() {
+		$table = $this->table;
+		$sql = "SELECT sum(price) AS total FROM $table";
+		$data = $this->db->query($sql);
+
+		return $data->row();
+	}
 }

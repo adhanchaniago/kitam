@@ -498,6 +498,11 @@ section.content-header h1 {
     display: block;
   }
 
+  .small-box .inner.price h3 {
+    font-size: 18px;
+    line-height: 38px;
+  }
+
 }
 
 
