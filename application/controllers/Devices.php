@@ -204,13 +204,17 @@ class devices extends AUTH_Controller {
 		    $objPHPExcel->getActiveSheet()->SetCellValue('A'.$rowCount, $value->name); 
 		    $objPHPExcel->getActiveSheet()->SetCellValue('B'.$rowCount, $value->manufacturer);
 		    $objPHPExcel->getActiveSheet()->SetCellValue('C'.$rowCount, $value->series);
-			$objPHPExcel->getActiveSheet()->SetCellValue('D'.$rowCount, $this->devices_model->supplier_by_id($value->id_supplier)->name);
+		    if($value->id_supplier) {
+				$objPHPExcel->getActiveSheet()->SetCellValue('D'.$rowCount, $this->devices_model->supplier_by_id($value->id_supplier)->name);
+			}
 			$objPHPExcel->getActiveSheet()->SetCellValue('E'.$rowCount, $value->price);
 			$objPHPExcel->getActiveSheet()->SetCellValue('F'.$rowCount, $value->purchase_date);
 			$objPHPExcel->getActiveSheet()->SetCellValue('G'.$rowCount, $value->warranty.' Month');
 			$objPHPExcel->getActiveSheet()->SetCellValue('H'.$rowCount, $value->description);
 			$objPHPExcel->getActiveSheet()->SetCellValue('I'.$rowCount, $value->label);
-			$objPHPExcel->getActiveSheet()->SetCellValue('J'.$rowCount, $this->devices_model->user_by_id($value->id_staff)->name);
+			if($value->id_staff) {
+				$objPHPExcel->getActiveSheet()->SetCellValue('J'.$rowCount, $this->devices_model->user_by_id($value->id_staff)->name);
+			}			
 			$objPHPExcel->getActiveSheet()->SetCellValue('K'.$rowCount, $value->location);
 			$objPHPExcel->getActiveSheet()->SetCellValue('L'.$rowCount, $value->condition);
 			if($category == 'pc' || $category == 'server') {

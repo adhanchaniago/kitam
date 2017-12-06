@@ -15,7 +15,7 @@
       </li>
       <li class="dropdown user user-menu menu-main-parent <?php if($page == 'devices') { echo 'active-page'; } ?>">
         <a href="#">
-          <span class="hidden-xs">Devices</span>
+          <span class="hidden-xs">IT Asset</span>
         </a>
         <ul class="dropdown-menu menu-main-child mid">
           <?php foreach ($category_hw as $menu_hw) { ?>
@@ -23,13 +23,18 @@
               <a href="<?php echo base_url('devices/index/category/'.$menu_hw->name); ?>" class="btn btn-default btn-flat"><?php echo $menu_hw->label ?></a>
             </li>
           <?php } ?>
+            <li>
+              <a href="<?php echo base_url('software'); ?>" class="btn btn-default btn-flat">Software</a>
+            </li>
         </ul>
       </li>
-      <li class="dropdown user user-menu <?php if($page == 'software') { echo 'active-page'; } ?>">
-        <a href="<?php echo base_url('software'); ?>">
+      <!--
+      <li class="dropdown user user-menu <?php //if($page == 'software') { echo 'active-page'; } ?>">
+        <a href="<?php //echo base_url('software'); ?>">
           <span class="hidden-xs">Software</span>
         </a>
       </li>
+      -->
       <li class="dropdown user user-menu <?php if($page == 'staff') { echo 'active-page'; } ?>">
         <a href="<?php echo base_url('staff'); ?>">
           <span class="hidden-xs">Staff</span>
@@ -40,6 +45,14 @@
           <span class="hidden-xs">Supplier</span>
         </a>
       </li>
+      
+      <?php if($userdata->role == 'guest') { ?>
+      <li class="dropdown user user-menu <?php if($page == 'report') { echo 'active-page'; } ?>">
+        <a href="<?php echo base_url('report'); ?>">
+          <span class="hidden-xs">Report</span>
+        </a>
+      </li>    
+      <?php } ?>
 
       <li class="dropdown user user-menu menu-main-parent <?php if($page == 'category' || $page == 'users' || $page == 'profile') { echo 'active-page'; } ?>">
         <a href="#">

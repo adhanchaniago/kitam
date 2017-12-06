@@ -8,15 +8,17 @@
 	  	for ($i=0; $i<count($this->session->flashdata('segment')); $i++) { 
 	  		if ($i == 0) {
 	  			if($this->session->flashdata('segment')[$i] !== 'home') {  			
-	  		?>
-	  			<li>Home</li>
-				<li> <?php echo $this->session->flashdata('segment')[$i]; ?></li>
-	  		<?php
+	  			?>
+		  			<li>Home</li>
+					<li> <?php echo $this->session->flashdata('segment')[$i]; ?></li>
+	  				<?php
 	  			}
-	  		} elseif ($i == (count($this->session->flashdata('segment'))-1)) {
-  			?>
+	  		}
+	  		 
+	  		elseif ($i == (count($this->session->flashdata('segment'))-1)) {
+  				?>
 				<li class="active"> <?php echo $this->session->flashdata('segment')[$i]; ?> </li>
-	  		<?php
+	  			<?php
 	  		} 
 	  	}
 	  ?>
